@@ -33,3 +33,19 @@ console.log(typeof myFunction); //function
 console.log(typeof null); //object
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// +++++++++++++++++++++++++++++++()
+// Stack(Primitive) and Heap(Reference) Memory Allocation in JavaScript 
+let myYouTubeVideo = "Learn JavaScript"; //primitive type
+let anotherVideo = myYouTubeVideo; //copy of the value
+anotherVideo = "Learn Python"; //change the value of anotherVideo
+console.log(anotherVideo);
+
+let userOne={
+    email:"userone@example.com",
+    upi:"userone@upi"
+}
+ let userTwo= userOne; //reference type
+ userTwo.email="usertwo@example.com"; //change the value of userTwo
+console.log(userOne.email); //userTwo email is changed because both userOne and userTwo are pointing to the same object in memory
+console.log(userTwo.email); //
